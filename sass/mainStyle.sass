@@ -1,0 +1,389 @@
+* 
+    margin: 0
+    list-style: none
+    text-decoration: none
+    font-family: "Space Grotesk"
+    color: #000
+
+$Green: #B9FF66
+$Grey: #F3F3F3
+$Dark: #191A23
+$Black: #000000
+
+.flex
+    display: flex
+.content
+    width: 1440px
+    margin: 0 auto
+    overflow: visible
+    // margin: 80px 0
+
+p 
+    font-size: 18px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+
+h1 
+    font-size: 60px
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+
+h2 
+    font-size: 40px
+
+h3 
+    font-size: 30px
+    font-style: normal
+    font-weight: 500
+    line-height: normal
+
+h4 
+    font-size: 20px
+    font-style: normal
+    font-weight: 400
+    line-height: 28px /* 140% */
+
+.nav-bar-block
+    padding: 40px 100px
+    justify-content: space-between
+    align-items: center
+    .logo
+        gap: 12.92px
+    .secondary-btn
+        border-radius: 14px
+        border: 1px solid $Dark
+        padding: 15px 25px
+        gap: 10px
+        background: none
+    .nav-bar
+        justify-content: center
+        align-items: center
+        gap: 40px
+        .nav-links
+            gap: 40px
+
+.content-layout_block
+    // margin: 0 auto
+    padding: 0px 100px
+    justify-content: space-between
+    align-items: flex-start
+
+    .content-layout-left
+        flex-direction: column
+        align-items: flex-start
+        gap: 35px
+        max-width: 532px
+        button
+            padding: 15px 25px
+            gap: 10px
+            border-radius: 14px
+            background: $Dark
+            color: #fff
+    .content-layout-right
+        max-height: 515px
+        flex-shrink: 0
+        
+.logotypes
+    padding: 30px 100px 0
+    justify-content: space-between
+    align-items: flex-start
+    background: #fff
+    img
+        mix-blend-mode: luminosity
+        flex-shrink: 0
+        max-height: 48px
+
+.heading_subheading
+    padding: 140px 100px 0px
+    align-items: center
+    gap: 40px
+    .heading_subheading-title
+        padding: 0px 8px
+        flex-direction: column
+        align-items: center
+        gap: 10px
+        border-radius: 7px
+        background: $Green
+    .heading_subheading-text
+        max-width: 580px
+    .our_working
+        max-width: 292px
+    .team
+        max-width: 473px
+    .contact_us
+        max-width: 324px
+
+.services-block
+    padding: 85px 0px 120px
+    flex-direction: column
+    align-items: center
+    gap: 40px
+    .card-section
+        padding: 0px 100px
+        align-items: center
+        gap: 40px
+        width: 1200px
+        .card
+            width: 600px
+            padding: 50px
+            justify-content: space-between
+            align-items: center
+            border-radius: 45px
+            border: 1px solid $Dark
+            box-shadow: 0px 5px 0px 0px $Dark
+        .illustration
+            img
+                max-width: 230px
+                flex-shrink: 0
+        .grey
+            background: $Grey
+        .green
+            background: $Green
+        .black
+            background: $Black
+        .heading_link
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            gap: 93px
+            max-width: 222px
+            .link
+                align-items: center
+                gap: 15px
+                .white
+                    color: #fff
+            .card-heading
+                flex-direction: column
+                align-items: flex-start
+                .card-heading-bg
+                    display: inline-flex
+                    padding: 0px 7px
+                    flex-direction: column
+                    align-items: flex-start
+                    gap: 10px
+                    border-radius: 7px
+                .green
+                    background: $Green
+                .white
+                    background: #fff
+
+.CTA-block
+    padding: 0px 100px
+    align-items: center
+    overflow: visible
+    height: 374px
+    .CTA-card
+        // layout
+        height: 374px
+        padding: 0 0 0 60px
+        align-items: center
+        gap: 186px
+        flex-shrink: 0
+        // style
+        border-radius: 45px
+        background: $Grey
+        position: relative
+        overflow: visible
+        .left
+            flex-direction: column
+            align-items: flex-start
+            gap: 26px
+            max-width: 500px
+            button
+                // style
+                padding: 15px 25px
+                border-radius: 14px
+                background: $Dark
+                color: #fff
+                border: none
+        .right
+            width: 500px
+            img
+                position: absolute
+                overflow: visible
+                max-width: 500px
+                height: 444px
+                transform: translate(0%, -50%)
+
+.case_studies_block
+    display: inline-flex
+    padding: 85px 100px 0px
+    flex-direction: column
+    align-items: flex-start
+    gap: 10px
+    .case_studies
+        padding: 70px 60px
+        align-items: flex-start
+        gap: 64px 
+        border-radius: 45px
+        background: $Dark
+        .line
+            width: 1px
+            height: 186px
+            // style
+            background: #fff
+        .case_study
+            flex-direction: column
+            align-items: flex-start
+            gap: 20px
+            .link
+                align-items: center
+                gap: 15px
+                p
+                    color: $Green
+            p
+                color: #fff
+.process_block
+    display: flex
+    padding: 80px 100px 0px
+    flex-direction: column
+    align-items: center
+    gap: 30px
+    .process_block-card
+        // layout
+        width: 1117px
+        padding: 41px 60px
+        flex-direction: column
+        gap: 30px
+        // style
+        border-radius: 45px
+        border: 1px solid $Dark
+        background: $Green
+        box-shadow: 0px 5px 0px 0px $Dark
+        .description-line
+                height: 1px
+                background: $Black
+        .process_block-card-content
+            justify-content: space-between
+            align-items: center
+            .process_card-header-block
+                align-items: center
+                gap: 25px
+.team_block
+    display: inline-flex
+    flex-direction: column
+    align-items: flex-start
+    gap: 40px
+    padding: 85px 0
+    .team_row
+        padding: 0px 100px
+        align-items: flex-start
+        gap: 40px
+        .team-card
+            //layout
+            padding: 40px 35px
+            flex-direction: column
+            align-items: flex-start
+            gap: 10px
+            // width: 387px
+            //style
+            border-radius: 45px
+            border: 1px solid $Dark
+            background: #FFF
+            box-shadow: 0px 5px 0px 0px $Dark
+            .team-card-content
+                flex-direction: column
+                align-items: flex-start
+                gap: 28px
+                max-height: 251px
+                .team-line
+                    width: 317px
+                    height: 1px
+                    background: $Black
+                .team-card-description
+                    max-width: 317px
+                    height: 92px
+                .team-content-person
+                    align-items: flex-end
+                    gap: 20px
+                    position: relative
+                    .team-person-img
+                        img
+                            mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTkiIGhlaWdodD0iOTgiIHZpZXdCb3g9IjAgMCA5OSA5OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTg0LjYzMSA0OC45MTE3QzExNy40NzMgODYuMzIxMyA4Ny4xNDU1IDExNi42NDkgNDkuNzM1OSA4My44MDY4QzEyLjMyNjMgMTE2LjY0OSAtMTguMDAxNiA4Ni4zMjEzIDE0Ljg0MDggNDguOTExN0MtMTguMDAxNiAxMS41MDIxIDEyLjMyNjMgLTE4LjgyNTggNDkuNzM1OSAxNC4wMTY2Qzg3LjE0NTUgLTE4LjgyNTggMTE3LjQ3MyAxMS41MDIxIDg0LjYzMSA0OC45MTE3WiIgZmlsbD0iI2ZmZiIvPgo8L3N2Zz4K)
+                            mask-repeat: no-repeat
+                            mask-position: center
+                        svg
+                            position: absolute
+                            transform: translate(6%,5%)
+                    .person-link
+                        position: absolute
+                        transform: translate(830%,-160%)
+                    .person-info
+                        flex-direction: column
+                        h4
+                            font-weight: 500
+.team-btn-layout
+    justify-content: flex-end
+    padding: 0px 100px
+    button
+        // layout
+        padding: 20px 35px
+        gap: 10px
+        // style
+        color: #fff
+        border: none
+        border-radius: 14px
+        background: $Dark
+
+// p
+//     color: #fff
+.testimonials_block
+    padding: 80px 100px 0px 100px
+    align-items: center
+    .testimonials
+        // layout
+        flex-direction: column
+        align-items: center
+        padding: 84px 0px 68px 0px
+        gap: 124px
+        overflow: hidden
+        width: 1240px
+        // style
+        border-radius: 45px
+        background: $Dark
+        .testimonials-cards
+            gap: 50px
+            justify-content: space-between
+            align-items: flex-start
+            .testimonials-card
+                flex-direction: column
+                align-items: flex-start
+                gap: 10px
+                flex-shrink: 0
+                .testimonials-card-author
+                    padding: 0 50px
+                    flex-direction: column
+                    gap: 5px
+                    h4
+                        color: $Green
+                    p
+                        color: #fff
+                .bubble-bg
+                    width: 612px
+                    height: 266px
+                    background: url(../img/bubble-bg.svg) no-repeat
+                    background-size: contain
+                    .bubble-text
+                        padding: 40px
+                        color: #fff
+        .testimonials-navigations
+            align-items: center
+            gap: 209px
+            img
+                opacity: 0.3
+                transition: opacity 0.3s ease-in-out
+            img:hover
+                opacity: 1
+            
+
+
+                    
+                    
+
+                
+            
+                
+
+             
