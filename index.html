@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/site.webmanifest">
     <title>Positivus - main</title>
 </head>
 <body>
@@ -584,33 +588,40 @@
             </div>
         </section>
         <section class="content">
-            <div class="contact-block">
-                <div class="block-layout">
-                    <form action="#" class="contact-form">
-                        <div class="radio-btn-layout">
-                            <div class="radio-btn">
+            <div class="contact-block flex">
+                <div class="block-layout flex">
+                    <form action="#" class="contact-form flex">
+                        <div class="radio-btn-layout flex">
+                            <div class="radio-btn flex">
                                 <input type="radio" name="#" id="#">
                                 <p>Say Hi</p>
                             </div>
-                            <div class="radio-btn">
+                            <div class="radio-btn flex">
                                 <input type="radio" name="#" id="#">
                                 <p>Get a Quote</p>
                             </div>
                         </div>
-                        <div class="input-btn-layout">
-                            <p>Name</p>
-                            <input type="text" placeholder="Name">
+                        <div class="form-fields-layout flex">
+                            <div class="input-btn-layout flex">
+                                <p>Name</p>
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="input-btn-layout flex">
+                                <p>Email<sup>*</sup></p>
+                                <input type="email" placeholder="Email" required="required">
+                            </div>
+                            <div class="input-btn-layout  flex">
+                                <p>Message<sup>*</sup></p>
+                                <textarea class="message flex" type="textarea" placeholder="Message" required="required"></textarea>
+                            </div>
                         </div>
-                        <div class="input-btn-layout">
-                            <p>Email*</p>
-                            <input type="email" placeholder="Email">
+                        <div class="submit-btn-layout flex">
+                            <input type="submit" value="Send Message">
                         </div>
-                        <div class="input-btn-layout">
-                            <p>Message*</p>
-                            <input type="text" placeholder="Message">
-                        </div>
-                        <input type="button" value="Send Message">
                     </form>
+                    <div class="illustration-block-layout">
+                        <img src="./img/contact-illustration.svg" alt="Vectors">
+                    </div>
                 </div>
             </div>
         </section>
@@ -644,5 +655,6 @@
             </div>
         </footer>
     </main>
+    <!-- <script src="./js/ScrollSmoother.js"></script> -->
 </body>
 </html>

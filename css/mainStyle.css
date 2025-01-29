@@ -6,6 +6,21 @@
   color: #000;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+  background: #B9FF66;
+}
+
+body::-webkit-scrollbar-track {
+  background: #191A23;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #B9FF66;
+  border-radius: 10px;
+  border: 3px solid #191A23;
+}
+
 .flex {
   display: flex;
 }
@@ -62,6 +77,17 @@ h4 {
   padding: 15px 25px;
   gap: 10px;
   background: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.nav-bar-block .secondary-btn:hover {
+  color: #fff;
+  background: #000000;
+  transition: all 0.3s ease;
 }
 .nav-bar-block .nav-bar {
   justify-content: center;
@@ -89,6 +115,18 @@ h4 {
   border-radius: 14px;
   background: #191A23;
   color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  border: 1px solid #191A23;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.content-layout_block .content-layout-left button:hover {
+  background: #fff;
+  color: #191A23;
+  transition: all 0.3s ease;
 }
 .content-layout_block .content-layout-right {
   max-height: 515px;
@@ -136,7 +174,7 @@ h4 {
 .services-block {
   padding: 85px 0px 120px;
   flex-direction: column;
-  align-items: center;
+  width: 1040px;
   gap: 40px;
 }
 .services-block .card-section {
@@ -228,7 +266,18 @@ h4 {
   border-radius: 14px;
   background: #191A23;
   color: #fff;
-  border: none;
+  border: 1px solid #191A23;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.CTA-block .CTA-card .left button:hover {
+  transition: all 0.3s ease;
+  background: #fff;
+  color: #000000;
 }
 .CTA-block .CTA-card .right {
   width: 500px;
@@ -379,9 +428,20 @@ h4 {
   padding: 20px 35px;
   gap: 10px;
   color: #fff;
-  border: none;
+  border: 1px solid #191A23;
   border-radius: 14px;
   background: #191A23;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.team-btn-layout button:hover {
+  background: #fff;
+  color: #000000;
+  transition: all 0.3s ease;
 }
 
 .testimonials_block {
@@ -435,9 +495,134 @@ h4 {
   gap: 209px;
 }
 .testimonials_block .testimonials .testimonials-navigations img {
+  cursor: pointer;
   opacity: 0.3;
   transition: opacity 0.3s ease-in-out;
 }
 .testimonials_block .testimonials .testimonials-navigations img:hover {
+  opacity: 1;
+}
+
+.contact-block {
+  padding: 85px 100px 140px;
+  align-items: center;
+}
+.contact-block .block-layout {
+  width: 1040px;
+  padding: 60px 100px 80px 100px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  flex-shrink: 0;
+  position: relative;
+  border-radius: 45px;
+  background: #F3F3F3;
+  overflow: hidden;
+}
+.contact-block .block-layout .illustration-block-layout {
+  width: 367px;
+  transform: translate(28%, 0);
+}
+.contact-block .block-layout .contact-form {
+  flex-direction: column;
+  gap: 40px;
+  width: 556px;
+}
+.contact-block .block-layout .contact-form .submit-btn-layout {
+  justify-content: center;
+  align-items: center;
+}
+.contact-block .block-layout .contact-form .submit-btn-layout input {
+  width: 556px;
+  padding: 20px 35px;
+  border: 1px solid #191A23;
+  border-radius: 14px;
+  background: #191A23;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact-block .block-layout .contact-form .submit-btn-layout input:hover {
+  background: #fff;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+.contact-block .block-layout .contact-form .input-btn-layout {
+  flex-direction: column;
+  gap: 5px;
+}
+.contact-block .block-layout .contact-form .input-btn-layout .message {
+  min-width: 496px;
+  max-width: 496px;
+  min-height: 190px;
+  max-height: 390px;
+  padding: 18px 30px;
+  border-radius: 14px;
+  border: 1px solid #000000;
+  background: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact-block .block-layout .contact-form .input-btn-layout input {
+  padding: 18px 30px;
+  border-radius: 14px;
+  border: 1px solid #000000;
+  background: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.contact-block .block-layout .contact-form .input-btn-layout p {
+  font-size: 16px;
+}
+.contact-block .block-layout .contact-form .form-fields-layout {
+  flex-direction: column;
+  gap: 25px;
+}
+.contact-block .block-layout .contact-form .radio-btn-layout {
+  align-items: center;
+  gap: 35px;
+}
+.contact-block .block-layout .contact-form .radio-btn-layout .radio-btn {
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  transition: all 0.3s ease;
+}
+.contact-block .block-layout .contact-form .radio-btn-layout .radio-btn input {
+  width: 28px;
+  height: 28px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid #191A23;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.contact-block .block-layout .contact-form .radio-btn-layout .radio-btn input::before {
+  content: "";
+  width: 0;
+  height: 0;
+  background: #B9FF66;
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  box-sizing: border-box;
+  transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+.contact-block .block-layout .contact-form .radio-btn-layout .radio-btn input:checked::before {
+  width: 14px;
+  height: 14px;
   opacity: 1;
 }

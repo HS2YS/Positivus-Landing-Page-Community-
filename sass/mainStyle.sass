@@ -10,6 +10,17 @@ $Grey: #F3F3F3
 $Dark: #191A23
 $Black: #000000
 
+// Scrollbar settings
+body::-webkit-scrollbar
+    width: 12px
+    background: $Green
+body::-webkit-scrollbar-track
+  background: $Dark
+body::-webkit-scrollbar-thumb
+    background-color: $Green
+    border-radius: 10px
+    border: 3px solid $Dark
+
 .flex
     display: flex
 .content
@@ -57,6 +68,16 @@ h4
         padding: 15px 25px
         gap: 10px
         background: none
+        font-size: 20px
+        font-style: normal
+        font-weight: 400
+        line-height: 28px
+        cursor: pointer
+        transition: all 0.3s ease
+        &:hover
+            color: #fff
+            background: $Black
+            transition: all 0.3s ease
     .nav-bar
         justify-content: center
         align-items: center
@@ -81,6 +102,17 @@ h4
             border-radius: 14px
             background: $Dark
             color: #fff
+            font-size: 20px
+            font-style: normal
+            font-weight: 400
+            line-height: 28px
+            border: 1px solid $Dark
+            cursor: pointer
+            transition: all 0.3s ease
+            &:hover
+                background: #fff
+                color: $Dark
+                transition: all 0.3s ease
     .content-layout-right
         max-height: 515px
         flex-shrink: 0
@@ -118,7 +150,7 @@ h4
 .services-block
     padding: 85px 0px 120px
     flex-direction: column
-    align-items: center
+    width: 1040px
     gap: 40px
     .card-section
         padding: 0px 100px
@@ -197,7 +229,19 @@ h4
                 border-radius: 14px
                 background: $Dark
                 color: #fff
-                border: none
+                border: 1px solid $Dark
+                font-size: 20px
+                font-style: normal
+                font-weight: 400
+                line-height: 28px
+                transition: all 0.3s ease
+                cursor: pointer
+                &:hover
+                    transition: all 0.3s ease
+                    background: #fff
+                    color: $Black
+                    
+                    
         .right
             width: 500px
             img
@@ -323,9 +367,21 @@ h4
         gap: 10px
         // style
         color: #fff
-        border: none
+        border: 1px solid $Dark
         border-radius: 14px
         background: $Dark
+        font-size: 20px
+        font-style: normal
+        font-weight: 400
+        line-height: 28px
+        cursor: pointer
+        transition: all 0.3s ease
+        &:hover
+            background: #fff
+            color: $Black
+            transition: all 0.3s ease
+
+
 
 // p
 //     color: #fff
@@ -372,18 +428,122 @@ h4
             align-items: center
             gap: 209px
             img
+                cursor: pointer
                 opacity: 0.3
                 transition: opacity 0.3s ease-in-out
             img:hover
                 opacity: 1
-            
-
-
+.contact-block
+    padding: 85px 100px 140px
+    align-items: center
+    .block-layout
+        // layout
+        width: 1040px
+        padding: 60px 100px 80px 100px
+        justify-content: space-between
+        align-items: center
+        gap: 50px
+        flex-shrink: 0
+        position: relative
+        // style
+        border-radius: 45px
+        background: $Grey
+        overflow: hidden
+        .illustration-block-layout
+            width: 367px
+            // position: absolute
+            transform: translate(28%,0)
+        .contact-form
+            flex-direction: column
+            gap: 40px
+            width: 556px
+            .submit-btn-layout
+                justify-content: center
+                align-items: center
+                input
+                    width: 556px
+                    padding: 20px 35px
+                    border: 1px solid $Dark
+                    border-radius: 14px
+                    background: $Dark
+                    color: #fff
+                    font-size: 20px
+                    font-style: normal
+                    font-weight: 400
+                    cursor: pointer
+                    transition: all 0.3s ease
+                    &:hover
+                        background: #fff
+                        color: $Black
+                        transition: all 0.3s ease
                     
+            .input-btn-layout
+                flex-direction: column
+                gap: 5px
+                .message
+                    //layout
+                    min-width: 496px
+                    max-width: 496px
+                    min-height: 190px
+                    max-height: 390px
+                    padding: 18px 30px
+                    // style
+                    border-radius: 14px
+                    border: 1px solid $Black
+                    background: #fff
+
+                    //font
+                    font-size: 18px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: normal                        
+                input
+                    padding: 18px 30px
+                    border-radius: 14px
+                    border: 1px solid $Black
+                    background: #fff
+                    font-size: 18px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: normal
                     
-
+                p
+                    font-size: 16px
                 
-            
-                
-
-             
+            .form-fields-layout
+                flex-direction: column
+                gap: 25px
+            .radio-btn-layout
+                align-items: center
+                gap: 35px
+                .radio-btn 
+                    align-items: center
+                    justify-content: center
+                    gap: 14px
+                    transition: all 0.3s ease
+                    input 
+                        width: 28px
+                        height: 28px
+                        appearance: none
+                        border: 1px solid $Dark
+                        border-radius: 50%
+                        cursor: pointer
+                        position: relative
+                        background: #fff
+                        transition: all 0.3s ease
+                        &::before 
+                            content: ""
+                            width: 0
+                            height: 0
+                            background: $Green
+                            border-radius: 50%
+                            position: absolute
+                            inset: 0
+                            margin: auto
+                            box-sizing: border-box
+                            transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease
+                            opacity: 0
+                        &:checked::before 
+                            width: 14px
+                            height: 14px
+                            opacity: 1
