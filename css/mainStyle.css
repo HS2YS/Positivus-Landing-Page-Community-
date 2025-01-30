@@ -635,10 +635,36 @@ h4 {
   margin: 0 100px;
   padding: 55px 60px 50px 60px;
   flex-direction: column;
-  align-items: center;
   gap: 50px;
   border-radius: 45px 45px 0 0;
   background: #191A23;
+}
+.footer_block .footer_line {
+  height: 1px;
+  width: 1120px;
+  background: #fff;
+}
+.footer_block .footer-content-down {
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer_block .footer-content-down p {
+  color: #fff;
+}
+.footer_block .footer-content-down a {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
 .footer_block .footer-content {
   flex-direction: column;
@@ -651,9 +677,57 @@ h4 {
   flex-direction: column;
   gap: 27px;
 }
+.footer_block .footer-content .footer-contact-info .down-left-block p {
+  color: #fff;
+}
 .footer_block .footer-content .footer-contact-info .down-left-block .left-block-title h4 {
   background: #B9FF66;
   padding: 0 7px;
+  border-radius: 7px;
+  font-weight: 500;
+}
+.footer_block .footer-content .footer-contact-info .down-right-block {
+  padding: 58px 48px;
+  align-items: center;
+  border-radius: 14px;
+  background: #292A32;
+}
+.footer_block .footer-content .footer-contact-info .down-right-block .footer-form {
+  gap: 20px;
+}
+.footer_block .footer-content .footer-contact-info .down-right-block .footer-form input {
+  padding: 22px 35px;
+  border-radius: 14px;
+  border: 1px solid #fff;
+  width: 240px;
+  background: none;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer_block .footer-content .footer-contact-info .down-right-block .footer-form input::-moz-placeholder {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer_block .footer-content .footer-contact-info .down-right-block .footer-form input::placeholder {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer_block .footer-content .footer-contact-info .down-right-block .footer-form .footer-submit-btn {
+  background: #B9FF66;
+  color: #000000;
+  border: 1px solid #B9FF66;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
 }
 .footer_block .footer-content .footer-nav-block {
   justify-content: center;

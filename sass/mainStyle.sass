@@ -553,10 +553,32 @@ h4
     margin: 0 100px
     padding: 55px 60px 50px 60px
     flex-direction: column
-    align-items: center
+    // align-items: center
     gap: 50px
     border-radius: 45px 45px 0 0
     background: $Dark
+    .footer_line
+        height: 1px
+        width: 1120px
+        background: #fff
+    .footer-content-down
+        gap: 40px
+        align-items: center
+        justify-content: flex-start
+        p
+            color: #fff
+        a
+            color: #fff
+            font-size: 18px
+            font-style: normal
+            font-weight: 400
+            line-height: 28px
+            text-decoration-line: underline
+            text-decoration-style: solid
+            text-decoration-skip-ink: none
+            text-decoration-thickness: auto
+            text-underline-offset: auto
+            text-underline-position: from-font
     .footer-content
         flex-direction: column
         gap: 66px
@@ -565,11 +587,45 @@ h4
             .down-left-block
                 flex-direction: column
                 gap: 27px
+                p
+                        color: #fff
                 .left-block-title
                     h4
                         background: $Green
                         padding: 0 7px
+                        border-radius: 7px
+                        font-weight: 500
             .down-right-block
+                padding: 58px 48px
+                align-items: center
+                border-radius: 14px
+                background: #292A32
+                .footer-form
+                    gap: 20px
+                    input
+                        padding: 22px 35px
+                        border-radius: 14px
+                        border: 1px solid #fff
+                        width: 240px
+                        background: none
+                        color: #fff
+                        font-size: 18px
+                        font-style: normal
+                        font-weight: 400
+                        line-height: normal
+                        &::placeholder
+                            color: #fff
+                            font-size: 18px
+                            font-style: normal
+                            font-weight: 400
+                            line-height: normal
+                    .footer-submit-btn
+                        background: $Green
+                        color: $Black
+                        border: 1px solid $Green
+                        font-style: normal
+                        font-weight: 400
+                        line-height: 28px                   
         .footer-nav-block
             justify-content: center
             align-items: center
