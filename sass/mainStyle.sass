@@ -28,6 +28,11 @@ body::-webkit-scrollbar-thumb
     margin: 0 auto
     overflow: visible
     // margin: 80px 0
+    align-items: center
+    justify-content: center
+    flex-direction: column
+.right
+    align-items: flex-end
 
 p 
     font-size: 18px
@@ -244,11 +249,9 @@ h4
         .right
             width: 500px
             img
-                position: absolute
                 overflow: visible
                 max-width: 500px
                 height: 444px
-                transform: translate(0%, -50%)
 
 .case_studies_block
     display: inline-flex
@@ -546,3 +549,50 @@ h4
                             width: 14px
                             height: 14px
                             opacity: 1
+.footer_block
+    margin: 0 100px
+    padding: 55px 60px 50px 60px
+    flex-direction: column
+    align-items: center
+    gap: 50px
+    border-radius: 45px 45px 0 0
+    background: $Dark
+    .footer-content
+        flex-direction: column
+        gap: 66px
+        .footer-contact-info
+            gap: 154px
+            .down-left-block
+                flex-direction: column
+                gap: 27px
+                .left-block-title
+                    h4
+                        background: $Green
+                        padding: 0 7px
+            .down-right-block
+        .footer-nav-block
+            justify-content: center
+            align-items: center
+            gap: 130px
+            .logo
+                gap: 10.59px
+            .footer-nav-social
+                gap: 20px
+                img
+                    width: 30px
+                    height: 30px
+            .footer-nav-links
+                align-items: flex-start
+                gap: 40px
+                a
+                    color: #FFF
+                    font-size: 18px
+                    font-style: normal
+                    font-weight: 400
+                    line-height: normal
+                    text-decoration-line: underline
+                    text-decoration-style: solid
+                    text-decoration-skip-ink: none
+                    text-decoration-thickness: auto
+                    text-underline-offset: auto
+                    text-underline-position: from-font

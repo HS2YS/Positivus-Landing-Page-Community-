@@ -29,6 +29,13 @@ body::-webkit-scrollbar-thumb {
   width: 1440px;
   margin: 0 auto;
   overflow: visible;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.right {
+  align-items: flex-end;
 }
 
 p {
@@ -282,11 +289,9 @@ h4 {
   width: 500px;
 }
 .CTA-block .CTA-card .right img {
-  position: absolute;
   overflow: visible;
   max-width: 500px;
   height: 444px;
-  transform: translate(0%, -50%);
 }
 
 .case_studies_block {
@@ -624,4 +629,62 @@ h4 {
   width: 14px;
   height: 14px;
   opacity: 1;
+}
+
+.footer_block {
+  margin: 0 100px;
+  padding: 55px 60px 50px 60px;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  border-radius: 45px 45px 0 0;
+  background: #191A23;
+}
+.footer_block .footer-content {
+  flex-direction: column;
+  gap: 66px;
+}
+.footer_block .footer-content .footer-contact-info {
+  gap: 154px;
+}
+.footer_block .footer-content .footer-contact-info .down-left-block {
+  flex-direction: column;
+  gap: 27px;
+}
+.footer_block .footer-content .footer-contact-info .down-left-block .left-block-title h4 {
+  background: #B9FF66;
+  padding: 0 7px;
+}
+.footer_block .footer-content .footer-nav-block {
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+}
+.footer_block .footer-content .footer-nav-block .logo {
+  gap: 10.59px;
+}
+.footer_block .footer-content .footer-nav-block .footer-nav-social {
+  gap: 20px;
+}
+.footer_block .footer-content .footer-nav-block .footer-nav-social img {
+  width: 30px;
+  height: 30px;
+}
+.footer_block .footer-content .footer-nav-block .footer-nav-links {
+  align-items: flex-start;
+  gap: 40px;
+}
+.footer_block .footer-content .footer-nav-block .footer-nav-links a {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
 }
